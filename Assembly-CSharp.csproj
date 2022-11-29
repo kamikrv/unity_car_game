@@ -56,12 +56,34 @@
     <Analyzer Include="/Applications/Visual Studio.app/Contents/Resources/lib/monodevelop/AddIns/MonoDevelop.Unity/Analyzers/Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/First Person Player/PlayerMovement.cs" />
     <Compile Include="Assets/Car/Scripts/CameraFollow.cs" />
     <Compile Include="Assets/Car/Scripts/PrometeoTouchInput.cs" />
+    <Compile Include="Assets/Brick Project Studio/Apartment Kit/Common/Scripts &amp; Animation/Z Axis -1/Drawer_Pull_Zopp.cs" />
+    <Compile Include="Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Drawer/X Axis/Drawer_Pull_X.cs" />
+    <Compile Include="Assets/Brick Project Studio/Apartment Kit/Common/Scripts &amp; Animation/Slide/opencloseSlide.cs" />
+    <Compile Include="Assets/Brick Project Studio/Apartment Kit/Common/Scripts &amp; Animation/OvenOpen/OvenFlip.cs" />
+    <Compile Include="Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Doors/opencloseStallDoor.cs" />
     <Compile Include="Assets/BrokenVector/LowPolyFencePack/Scripts/DoorController.cs" />
+    <Compile Include="Assets/Brick Project Studio/Apartment Kit/Scenes/Quitgame.cs" />
+    <Compile Include="Assets/Scripts/Mover.cs" />
+    <Compile Include="Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Drawer/Z Axis/Drawer_Pull_Z.cs" />
+    <Compile Include="Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/First Person Player/SceneSwitchGen.cs" />
     <Compile Include="Assets/city items and buildings/ColorfulCity/Scripts/SimpleCameraController.cs" />
+    <Compile Include="Assets/Brick Project Studio/Apartment Kit/Common/Scripts &amp; Animation/Closet/ClosetopencloseDoor.cs" />
+    <Compile Include="Assets/Brick Project Studio/Apartment Kit/Common/Scripts &amp; Animation/TableFlip/TableFlipR.cs" />
+    <Compile Include="Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Doors/opencloseDoor.cs" />
+    <Compile Include="Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/First Person Player/MouseLook.cs" />
+    <Compile Include="Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Windows/opencloseWindow.cs" />
     <Compile Include="Assets/BrokenVector/LowPolyFencePack/Scripts/DoorToggle.cs" />
+    <Compile Include="Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Doors/opencloseDoor1.cs" />
+    <Compile Include="Assets/Brick Project Studio/Apartment Kit/Common/Scripts &amp; Animation/Windows/opencloseWindowApt.cs" />
+    <Compile Include="Assets/Brick Project Studio/Apartment Kit/Common/Scripts &amp; Animation/Slide/BRGlassDoor.cs" />
+    <Compile Include="Assets/Brick Project Studio/Apartment Kit/Common/Scripts &amp; Animation/TableFlip/TableFlipL.cs" />
+    <Compile Include="Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Windows/opencloseWindow1.cs" />
+    <Compile Include="Assets/Scripts/MoveObject.cs" />
     <Compile Include="Assets/Car/Scripts/PrometeoCarController.cs" />
+    <Compile Include="Assets/Scripts/UIController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Shaders/Skybox Cubemap Extended.shader" />
@@ -72,6 +94,7 @@
     <None Include="Assets/3D Simple Building/Readme.txt" />
     <None Include="Assets/Low Poly Buildings Lite/ReadMe.txt" />
     <None Include="Assets/Simple city plain/Read_me.txt" />
+    <None Include="Assets/Brick Project Studio/Apartment Kit/Scenes/BPS Apartment Kit.txt" />
     <None Include="Assets/Car/Fonts/Licence.txt" />
   </ItemGroup>
   <ItemGroup>

@@ -1,0 +1,40 @@
+﻿<Properties StartupConfiguration="{77D425B6-BEAC-3691-5E29-6E1834AFFC50}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIController.cs">
+    <Files>
+      <File FileName="Assets/Scripts/Mover.cs" Line="4" Column="22" />
+      <File FileName="Assets/Scripts/MoveObject.cs" Line="98" Column="68" />
+      <File FileName="Assets/Scripts/UIController.cs" Line="6" Column="2" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="unity_car_game" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="BrokenVector" expanded="True">
+                <Node name="LowPolyShaders" expanded="True">
+                  <Node name="Shaders" expanded="True" />
+                </Node>
+              </Node>
+              <Node name="Car" expanded="True">
+                <Node name="Scripts" expanded="True" />
+              </Node>
+              <Node name="Characters" expanded="True">
+                <Node name="Woman 2" expanded="True" />
+              </Node>
+              <Node name="Scripts" expanded="True">
+                <Node name="UIController.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f41a7c88-12a8-466d-be3a-5426ef6935ef" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
