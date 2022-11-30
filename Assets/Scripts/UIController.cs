@@ -7,9 +7,12 @@ public class UIController : MonoBehaviour
 {
     [SerializeField] Transform[] stars;
 
-    public void ChangeStar()
+    public void ChangeStar(int starIndex)
     {
-        stars[0].GetComponent<Image>().color = Color.white;
+        if (starIndex <= 5)
+        {
+            stars[starIndex-1].GetComponent<Image>().color = Color.white;
+        }
     }
 
     void Start()

@@ -12,6 +12,9 @@ public class MoveObject : MonoBehaviour
     bool isCarClose = false;
     [SerializeField] BoxCollider[] box;
     [SerializeField] UIController uIController;
+    int CountOfFalling = 0;
+    bool startMove = true;
+    bool calledFall = false;
 
     int nextPosIndex;
     Animator MyAnimator;
@@ -27,16 +30,13 @@ public class MoveObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!isCarClose)
+        if (!isCarClose && startMove)
         {
             MoveGameObject();
         }
-        else if (isCarClose)
-        {
-            FallingDown();
-        }
-        else
-        {
+         
+        else if(isCarClose && startMove)
+         {
             RunAway();
         }
         CheckFalling();
@@ -75,6 +75,12 @@ public class MoveObject : MonoBehaviour
         }
     }
 
+    void HitCount()
+    {  
+        CountOfFalling++;
+        Debug.Log(CountOfFalling);
+    }
+
     void CheckFalling()
     {
         if((transform.rotation.x > 20  || transform.rotation.x < -20)
@@ -89,22 +95,27 @@ public class MoveObject : MonoBehaviour
 
    void FallingDown()
     {
-        Debug.Log("dist=" + Vector3.Distance(transform.position, Car.position));
-        if (Vector3.Distance(transform.position, Car.position) < 3)
-        {
-            MyAnimator.SetTrigger("FallDown");
-            isCarClose = true;
-            box[0].enabled = false;
-            box[1].enabled = false;
-            transform.GetComponent<Rigidbody>().isKinematic = true;
-            uIController.ChangeStar();
-        }
-        else
-        {
-            box[0].enabled = true;
-            box[1].enabled = true;
-            transform.GetComponent<Rigidbody>().isKinematic = false;
-        }
+        //Debug.Log("dist=" + Vector3.Distance(transform.position, Car.position));
+        //if (Vector3.Distance(transform.position, Car.position) < 3 && calledFall ==false)
+        //{
+            //calledFall = true;
+            //HitCount();
+            //MyAnimator.SetTrigger("FallDown");
+            //isCarClose = true;
+            //box[0].enabled = false;
+            //box[1].enabled = false;
+            //transform.GetComponent<Rigidbody>().isKinematic = true;
+            //uIController.ChangeStar(CountOfFalling);
+       // }
+         
+    }
+    void ResetCharacter()
+    {
+        calledFall = false;
+        box[0].enabled = true;
+        box[1].enabled = true;
+        transform.GetComponent<Rigidbody>().isKinematic = false;
+        startMove = true;
     }
 
    void DistanceToCar()
@@ -133,5 +144,20 @@ public class MoveObject : MonoBehaviour
 
         // Calculate a rotation a step closer to the target and applies rotation to this object
         transform.rotation = Quaternion.LookRotation(Direction);
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.transform.name == "Car" && calledFall == false) {
+            calledFall = true;
+            HitCount();
+            MyAnimator.SetTrigger("FallDown");
+            isCarClose = true;
+            startMove = false;
+            box[0].enabled = false;
+            box[1].enabled = false;
+            transform.GetComponent<Rigidbody>().isKinematic = true;
+            uIController.ChangeStar(CountOfFalling);
+        }
     }
 }
