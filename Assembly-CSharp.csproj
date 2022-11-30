@@ -94,6 +94,7 @@
     <Compile Include="Assets/Scripts/MoveObject.cs" />
     <Compile Include="Assets/Car/Scripts/PrometeoCarController.cs" />
     <Compile Include="Assets/Scripts/PlayerController.cs" />
+    <Compile Include="Assets/Scripts/CarTrigger.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Shaders/Skybox Cubemap Extended.shader" />

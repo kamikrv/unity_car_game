@@ -5,9 +5,15 @@ using Cinemachine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] GameObject Car;
+    public GameObject Car= null;
     [SerializeField] GameObject Player;
     [SerializeField] GameObject Camera;
+
+    public static PlayerController Instance { get; private set; } // static singleton
+    void Awake()
+    {
+        if (Instance == null) { Instance = this; }
+    }
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +24,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Vector3.Distance(Player.transform.position, Car.transform.position));
+        //Debug.Log(Vector3.Distance(Player.transform.position, Car.transform.position));
         if((Vector3.Distance(Player.transform.position, Car.transform.position) < 3) && (Input.GetKeyDown(KeyCode.E)))
         {
             Player.transform.SetParent(Car.transform);
