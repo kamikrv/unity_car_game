@@ -93,6 +93,7 @@
     <Compile Include="Assets/Brick Project Studio/_BPS Basic Assets/Common/Scripts and Animations/Windows/opencloseWindow1.cs" />
     <Compile Include="Assets/Scripts/MoveObject.cs" />
     <Compile Include="Assets/Car/Scripts/PrometeoCarController.cs" />
+    <Compile Include="Assets/Scripts/PlayerController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets/BOXOPHOBIC/Skybox Cubemap Extended/Core/Shaders/Skybox Cubemap Extended.shader" />
